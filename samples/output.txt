@@ -1,0 +1,1 @@
+Informe o 1º número: Informe o 2º número: 10 é MENOR que 20
