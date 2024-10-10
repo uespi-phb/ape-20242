@@ -1,4 +1,6 @@
-
+#
+# Beecrowd - Problem 1078
+#
 n = int(input())
 
 m = 1

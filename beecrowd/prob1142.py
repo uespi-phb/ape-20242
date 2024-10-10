@@ -1,3 +1,6 @@
+#
+# Beecrowd - Problem 1142
+#
 
 n = int(input())
 

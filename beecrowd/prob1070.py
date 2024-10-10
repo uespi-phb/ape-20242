@@ -1,3 +1,6 @@
+#
+# Beecrowd - Problem 1070
+#
 n = int(input())
 
 if n % 2 == 0:
