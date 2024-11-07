@@ -4,11 +4,8 @@
 
 n = int(input())
 
-i = 0
-while i < n:
-    i += 1
-
-    n1 = i**2   # i * i
-    n2 = i**3   # i * i * i
-    print(f'{i} {n1} {n2}')
-    print(f'{i} {n1 + 1} {n2 + 1}')
+for k in range(1, n + 1):
+    k2 = k * k
+    k3 = k * k * k
+    print(f'{k} {k2} {k3}')
+    print(f'{k} {k2 + 1} {k3 + 1}')
