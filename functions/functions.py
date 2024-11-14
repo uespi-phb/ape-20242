@@ -13,5 +13,10 @@ def sum(*values):
 def print_sum(prompt, *numbers):
     print(prompt, sum(*numbers))
 
+def sample(a, b, *pargs, **kwargs):
+  print('a\t:',a)
+  print('b\t:',b)
+  print('pargs\t:',pargs)
+  print('kwargs\t:',kwargs)
 
-print_sum('soma:', 10, 20)
+# print_sum('soma:', 10, 20)
