@@ -1,0 +1,13 @@
+** CÁLCULO DO N-ÉSIMO TERMO DA SÉRIE DE FIBONACCI **
+
+Valor de N: fib(5) = 5	(versão iterativa)
+fib(5)
+fib(4)
+fib(3)
+fib(2)
+fib(1)
+fib(2)
+fib(3)
+fib(2)
+fib(1)
+fib(5) = 5	(versão recursiva)
