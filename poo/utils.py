@@ -1,7 +1,6 @@
 
 def float_to_currency(value):
-    man, dec = f'{value:0.2f}'.split('.')
-    man = int(man)
+    man, dec = map(int, f'{value:0.2f}'.split('.'))
 
     thousands = []
     while True:

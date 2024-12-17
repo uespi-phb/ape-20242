@@ -15,7 +15,11 @@ import utils
 
 
 class BankAccount:
+    __last_account_number = 1000
+
     def __init__(self, holder):
+        BankAccount.__last_account_number += 1
+        self.number = BankAccount.__last_account_number
         self.holder = holder
         self.balance = 0.00
 
@@ -34,6 +38,7 @@ class BankAccount:
     def print_balance(self):
         print('BANCO EXEMPLO S/A')
         print('SALDO DA CONTA')
+        print('Conta  :', self.number)
         print('Titular:', self.holder)
         print('Saldo  :', utils.float_to_currency(self.balance))
 
@@ -45,7 +50,9 @@ class BankAccount:
         return f'BankAccount({self.holder}; {currency})'
 
 
-a1 = BankAccount('Fulano de Tal')
-a1.deposit(5125.93)
-a1.withdraw(200.00)
-a1.print_balance()
+for k in range(10):
+    account = BankAccount(f'Titular {k}')
+    account.print_balance()
+    print()
+
+print(dir(BankAccount))
