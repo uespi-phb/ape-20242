@@ -5,8 +5,10 @@ class MemoryCard:
         self.__is_matched = False
 
     def __str__(self):
-        # Bug - __str__ sempre deve retornar uma string (str)
-        return self.__value if self.__is_matched else '*'
+        return str(self.__value) if self.__is_matched else '*'
+    
+    def __repr__(self):
+        return str(self)
     
     def match(self):
         self.__is_matched = True

@@ -1,5 +1,4 @@
 
-
 from memory_game import MemoryGame
 
 
@@ -11,6 +10,7 @@ def main():
     while not game.is_game_over():
         index1, index2 = game.random_pair()
         game.play(index1, index2)
+        print(f'({index1},{index2})', end='\t')
         game.show_cards()
 
 
